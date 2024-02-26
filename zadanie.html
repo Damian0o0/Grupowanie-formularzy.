@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="pl=PL"
+	<head>
+		<title>Formularz</title>
+		<meta charset="UTF-8">
+        <meta name="description" content="Formularz">
+        <meta name="keywords" content="Formularz">
+	</head>
+	<body>
+		<h1>Formularz rejestracyjny:</h1>
+		<form action="mailto:gorka.damian@zst.radom.pl" method="get">
+			<p>Podaj swoje nazwisko:<input type="text" name="nazwisko" size="20" required autofocus></p>
+			<p>Podaj swoje imię:<input type="text" name="imie" size="20" required autofocus></p>
+		
+			<p>Wybierz płeć:</p>
+			<input type="radio" name="plec" value="kobieta" required autofocus>Kobieta
+			<input type="radio" name="plec" value="mezczyzna" required autofocus>Mężczyzna<br>
+			
+			<p>Podaj wiek:</p>
+			<input type="number" name="wiek" min="1" max="120" required autofocus>
+			
+			<p>Podaj adres e-mail</p>
+			<input type="text" name="email" size="30" required autofocus>
+			
+			<p>Wybierz wykształcenie:</p>
+			<input type="radio" name="xyz" value="Podstawowe" required autofocus>Podstawowe<br>
+			<input type="radio" name="xyz" value="Średnie" required autofocus>Średnie<br>
+			<input type="radio" name="xyz" value="Wyższe" required autofocus>Wyższe<br>
+			
+			<p>Wybierz języki</p>
+			<select name="jezyki" size="6" multiple required>
+				<option>Język angielski</option>
+				<option>Język niemiecki</option>
+				<option>Język francuski</option>
+				<option>Język włoski</option>
+				<option>Język rosyjski</option>
+				<option>Język hiszpański</option>
+			</select>
+			
+			<p>Wybierz zainteresowania:</p>
+			<p><input type="checkbox" name="motoryzacja">Motoryzacja</p>
+			<p><input type="checkbox" name="sport">Sport<p>
+			<p><input type="checkbox" name="muzyka">Muzyka<p>
+			<p><input type="checkbox" name="tanied">Taniec<p>
+			<p><input type="checkbox" name="grykomputerowe">Gry Komputerowe<p>
+			<p><input type="checkbox" name="inne">Inne(podaj jakie):<input type="text" size="20"></p>
+			
+			<p>Wpisz swoje uwagi:</p>
+			<textarea name="uwagi" rows="10" cols="45">
+			</textarea>
+			
+			<p><input type="checkbox" required autofocus>Zgadzam sie na przetwarzanie moich danych osobowych</p>
+			<input type="submit" value="Wyślij">
+			<input type="reset" value="Wyczyść">
+			
+			
+			
+		</form>
+	</body>
+</html>
